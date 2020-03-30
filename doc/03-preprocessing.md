@@ -42,7 +42,7 @@ Pythonで正規表現を扱うには，組み込みモジュールのreを使用
 
 re.subメソッドは，指定した正規表現パターンにマッチする箇所を置換する処理を行います。第１引数には正規表現パターン，第２引数には置換後の文字列，第３引数には対象の文字列を指定します。
 
-```ipython
+```python
 >>> import re
 >>> def clean_hashtag(text):
 ...     cleaned_text = re.sub(r'#[a-zA-Z]+', '', text)
