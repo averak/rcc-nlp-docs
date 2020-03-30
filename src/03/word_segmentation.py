@@ -17,3 +17,8 @@ for token in t.tokenize(text):
     読み：token.reading
     発音：token.phonetic
     '''
+
+# 分かち書きのみ
+t = Tokenizer(wakati=True)
+print(t.tokenize(text))
+
