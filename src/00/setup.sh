@@ -1,13 +1,11 @@
 #!/bin/bash -e
 
-
 PYTHON_VERSION=3.7.5
-
 
 function ask_yes_no {
   while true; do
     echo
-    read -t 60 -p "$* [y/n]: " ANS || return 1
+    read -p "$* [y/n]: " ANS
 
     case $ANS in
       [Yy]*)
@@ -23,7 +21,6 @@ function ask_yes_no {
   done
 }
 
-
 # install pyenv
 if [ ! -e ~/.pyenv ];then
   echo "Installing pyenv..."
@@ -33,7 +30,6 @@ if [ ! -e ~/.pyenv ];then
   echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
   echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> ~/.bash_profile
 fi
-
 
 # install python
 if [ ! -e "${HOME}"/.pyenv/versions/${PYTHON_VERSION} ];then
