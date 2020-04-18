@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-PYTHON_VERSION=3.7.5
+PYTHON_VERSION=3.7.6
 
 function ask_yes_no {
   while true; do

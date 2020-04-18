@@ -24,8 +24,8 @@ $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 続いてPython 3.7をインストールします。（現時点で3.8はTensorFlow非対応です）
 
 ```sh
-$ pyenv install 3.7.5
-$ pyenv global 3.7.5
+$ pyenv install 3.7.6
+$ pyenv global 3.7.6
 ```
 
 以上でPythonのセットアップは完了です。
