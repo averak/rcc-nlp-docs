@@ -5,11 +5,6 @@
 RCC 2020年度春学期プロジェクト活動
 
 
-## References
-* Pythonによるテキストマイニング入門
-* 機械学習・深層学習による自然言語処理入門
-
-
 ## Author
 - Tatsuya Abe
 - ```abe12<at>mccc.jp```
