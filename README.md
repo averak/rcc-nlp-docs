@@ -2,7 +2,7 @@
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-RCC 2020年度春学期プロジェクト活動
+RCC 2020年度プロジェクト活動
 
 
 ## Requirements
