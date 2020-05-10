@@ -6,8 +6,9 @@ RCC 2020年度プロジェクト活動
 
 
 ## Requirements
-* macOS / Ubuntu
-* Python 3.7.6
+* macOS / Ubuntu / Windows
+* Python ~> 3.7.0
+* 日本語
 
 
 ## Author
