@@ -157,3 +157,21 @@ re.subメソッドは，指定した正規表現パターンにマッチする�
 いろいろ
 ...
 ```
+
+まずは，[Slothlib](http://svn.sourceforge.jp/svnroot/slothlib/CSharp/Version1/SlothLib/NLP/Filter/StopWord/word/Japanese.txt)の中身を`stopwords.txt`にコピーして下さい。
+
+改行区切りのストップワード辞書を作成しました。それではこれをPythonから読み込み，前処理対象のテキストに含まれていた場合にはそれを除去していきましょう。
+
+```python
+>>> text = '結局あそこのラーメンが一番美味しい。'
+>>>
+>>> stopwords = open('stopwords.txt', 'r').read().split('\n')
+>>> stopwords
+['あそこ', 'あたり', 'あちら', 'あっち', ... , '同じ', '感じ']
+>>>
+>>> for sw in stopwords:
+...     text = text.replace(sw, '')
+...
+>>> text
+'のラーメンが番美味しい。'
+```
