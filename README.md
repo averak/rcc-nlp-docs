@@ -14,4 +14,4 @@ RCC 2020年度プロジェクト活動
 
 ## Author
 - Tatsuya Abe
-- ```abe12<at>mccc.jp```
+- `abe12<at>mccc.jp`
