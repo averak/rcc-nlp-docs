@@ -8,6 +8,8 @@
 
 といった特徴があるので，今回はPythonを利用します。
 
+ここではPython 3.8を使用しますが，フラッグシップが嫌いな方は別のバージョンでも構いません。
+
 
 ## Pythonをインストール
 ### Windowsへインストール
@@ -28,10 +30,10 @@ $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 続いてPython 3.8をインストールします。~~（現時点で3.8はTensorFlow非対応です）~~
 
 ```sh
-$ pyenv install 3.7.6
-$ pyenv global 3.7.6
+$ pyenv install 3.8.2
+$ pyenv global 3.8.2
 ```
 
 以上でPythonのセットアップは完了です。
 
-ターミナルで`python -V`と入力して`Python 3.7.6`と表示されれば成功です。
+ターミナルで`python -V`と入力して`Python 3.8.2`と表示されれば成功です。
