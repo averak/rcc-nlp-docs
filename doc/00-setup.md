@@ -25,6 +25,7 @@ $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
 $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+# zshの場合は，.bash_profile -> .zshrcとしてください
 ```
 
 続いてPython 3.8をインストールします。~~（現時点で3.8はTensorFlow非対応です）~~
@@ -37,3 +38,4 @@ $ pyenv global 3.8.2
 以上でPythonのセットアップは完了です。
 
 ターミナルで`python -V`と入力して`Python 3.8.2`と表示されれば成功です。
+
