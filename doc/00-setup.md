@@ -23,9 +23,11 @@
 ```sh
 $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
-$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
-$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-# zshの場合は，.bash_profile -> .zshrcとしてください
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+$ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+$ source ~/.bashrc
+# zshの場合は，.bashrc -> .zshrcとしてください
 ```
 
 続いてPython 3.8をインストールします。~~（現時点で3.8はTensorFlow非対応です）~~

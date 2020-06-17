@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-PYTHON_VERSION=3.7.6
+PYTHON_VERSION=3.8.2
 
 function ask_yes_no {
   while true; do
@@ -26,9 +26,9 @@ if [ ! -e ~/.pyenv ];then
   echo "Installing pyenv..."
   git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
-  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
-  echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-  echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> ~/.bash_profile
+  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+  echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+  echo 'export PATH="$PYENV_ROOT/shims:$PATH"' >> ~/.bashrc
 fi
 
 # install python
