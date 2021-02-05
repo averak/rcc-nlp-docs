@@ -29,3 +29,11 @@ tex 形式を txt に変換する前処理を行い，処理後のテキスト�
 ```sh
 $ python preprocessing.py
 ```
+
+### 4. 総会文書のコピペチェック
+
+局ごとの総会文書コピペチェックをします。`similarity.py`の`TARGET`でチェック対象の局を指定できます。
+
+```sh
+$ python similarity.py
+```
