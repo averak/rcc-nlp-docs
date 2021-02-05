@@ -19,7 +19,7 @@ $ ./fetch_data.sh
 
 ```sh
 $ pip install -U pip
-$ pip install sklearn
+$ pip install sklearn janome numpy tqdm
 ```
 
 ### 3. 前処理
