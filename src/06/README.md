@@ -16,7 +16,16 @@ $ ./fetch_data.sh
 ```
 
 ### 2. ライブラリをインストール
+
 ```sh
 $ pip install -U pip
 $ pip install sklearn
+```
+
+### 3. 前処理
+
+tex 形式を txt に変換する前処理を行い，処理後のテキストを`text`ディレクトリに作成します。
+
+```sh
+$ python preprocessing.py
 ```
