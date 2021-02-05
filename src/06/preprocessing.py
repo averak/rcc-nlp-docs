@@ -1,6 +1,7 @@
 import os
 import re
 import glob
+import tqdm
 
 
 def cleaning(text):
@@ -18,7 +19,8 @@ docs = {"kaikei": [], "system": [], "syogai": [], "kensui": [], "soumu": []}
 files = glob.glob(r"data/*/src/*/*/*.tex")
 
 # read
-for file_name in files:
+print('データ読み込み...')
+for file_name in tqdm.tqdm(files):
     for kyoku in docs.keys():
         if kyoku not in file_name:
             continue
@@ -28,8 +30,9 @@ for file_name in files:
             docs[kyoku].append(text)
 
 # dump
+print('データ書き込み...')
 os.system("rm -rf text")
-for kyoku in docs.keys():
+for kyoku in tqdm.tqdm(docs.keys()):
     os.makedirs('text/%s' % kyoku, exist_ok=True)
 
     for text in docs[kyoku]:
