@@ -1,0 +1,22 @@
+# BoW 表現
+
+BoW 表現を用いて，RCC 総会文書の類似度算出及び分類をします。
+
+## 実行環境
+
+- Python 3.0
+- OS: Ubuntu
+
+## 使い方
+
+### 1. 総会文書をダウンロード
+
+```sh
+$ ./fetch_data.sh
+```
+
+### 2. ライブラリをインストール
+```sh
+$ pip install -U pip
+$ pip install sklearn
+```
