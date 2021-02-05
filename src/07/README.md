@@ -28,3 +28,15 @@ $ pip install markovify
 ```sh
 $ python preprocessing.py
 ```
+
+### 4. 学習
+
+```sh
+$ python train.py
+```
+
+### 5. テキスト生成！
+
+```sh
+$ python generator.py
+```
