@@ -5,12 +5,15 @@ import tqdm
 
 
 def cleaning(text):
-    result = re.sub(r"\\[a-zA-Z*#]+", "", text)
+    result = re.sub(r"\\[a-zA-Z*#&]+", "", text)
     result = re.sub(r"\{.*\}", "", result)
     result = re.sub(r"\(.*\)", "", result)
     result = re.sub(r"（.*）", "", result)
     result = re.sub(r"[ 　]", "", result)
-    result = re.sub(r"\n", "", result)
+    result = re.sub(r"[\n\t\r]", "", result)
+    result = re.sub(r"[*#&%]", "", result)
+    result = re.sub(r"[、，,]", "", result)
+    result = re.sub(r"[。．.]", "\n", result)
 
     return result
 
